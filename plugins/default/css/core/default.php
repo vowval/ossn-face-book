@@ -2145,6 +2145,34 @@ footer .ossn-footer-menu a:last-child::after {
 ****************************************/
 
 @media only screen and (max-width: 992px) {
+    
+    .site_logo:after {
+        font-family: FontAwesome;
+        content: "\f002";
+        position: absolute;
+        padding: 13px;
+    }
+
+    input#search__btn {
+    background: transparent;
+    opacity: 0%;
+    display: block;
+    position: absolute;
+    margin: 16px 135px;
+    cursor: pointer;
+    }
+    #search__box {
+        width:100%
+        height:100%;
+        display: none;
+        transition: all 5s ease-in;
+
+    }
+    input#search__btn:checked~.col-md-5.col-xs-12.search_bar {
+        transition-timing-function: linear;   
+        display: block;     
+    }
+
     .ossn-group-cover img {
         top: auto !important;
     }
