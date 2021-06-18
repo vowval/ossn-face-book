@@ -32,7 +32,7 @@ body {
 .ossn-form select,
 .ossn-form textarea,
 .ossn-form input[type='text'] {
-    width: 100%;
+    width: 100% !important;
     border: 1px solid #eee;
     padding: 10px;
     margin-bottom: 5px;
@@ -83,6 +83,9 @@ p {
 .btn {
 	border-radius:2px;
 }
+.ossn-wall-item {
+    border-radius: 7px;
+}
 .btn-primary {
 	background:#3b5998;
 }
@@ -100,7 +103,7 @@ p {
 
 .ossn-home-container .ossn-page-contents {
     background: rgba(255, 255, 255, 0);
-    border:none;
+    border:none;class="col-md-12 col-xs-12 site_logo"
 }
 .ossn-layout-startup {
     background:#D3D8E8 url("<?php echo ossn_theme_url();?>images/home-background.png") repeat-x;
@@ -141,6 +144,7 @@ p {
     background: #fff;
     border: 1px solid #eee;
     padding: 10px;
+    border-radius: 5px;
 }
 .ossn-page-container {
     overflow-x: hidden;
@@ -241,7 +245,9 @@ p {
 }
 .topbar .fa-sort-desc {
     color: #17233d;
-    margin-top:2px;
+    margin-top:-9px;
+    margin-right: -9px;
+    font-size:30px;
 }
 .topbar-userdata {
     float: right;
@@ -265,13 +271,14 @@ p {
 }
 .sitename {
 	float: left;
-    background: #fff;
+    background: #29487d;
     padding: 0px 8px;
     border-radius: 2px;
     margin-top: 10px;
     font-size: 20px;
     font-weight: bold;
-    color:#29487d;
+    color:#fff;
+    border-radius: 5px;
 }
 .topbar-userdata .homelink a {
     font-weight: bold;
@@ -404,12 +411,14 @@ p {
     margin-top: 3px;
     margin-top: -5px;
     padding-right: 10px;
+    border-radius: 0px 0px 5px 5px;
 }
 .ossn-wall-container .wall-tabs {
     border-bottom: 1px solid #E5E5E5;
     background-color: #F6F7F8;
     border: 1px solid #E9EAED;
     margin-top: 5px;
+    border-radius: 5px 5px 0px 0px;
 }
 .ossn-wall-container .wall-tabs .item{
     padding: 10px;
@@ -518,6 +527,7 @@ p {
     margin-right: -15px;
     padding-left: 10px;
     padding-right: 10px;
+    border-radius: 0px 0px 5px 5px;
 }
 .comments-list .comments-item {
     padding-top: 10px;
@@ -765,9 +775,10 @@ p {
 .left {
     float: left;
 }
-.text-right {
-    text-align: right;
+.right_menu {
+    float: right;
 }
+
 .text-left {
     text-align: left;
 }
@@ -828,6 +839,10 @@ p {
 .dropmenu-topbar-icons {
     left: inherit;
     right: 0;
+}
+
+.dropdown-menu.multi-level.dropmenu-topbar-icons.ossn-notifications-box {
+    left: 100px;
 }
 /******************************************
 	Ossn Ads
@@ -2168,7 +2183,23 @@ footer .ossn-footer-menu a:last-child::after {
         margin-left: 0px !important;
     }
     .sidebar-menu-nav .sidebar-menu .menu-content {
-        display: block;
+        display: flex;
+    }
+    .sidebar-menu-nav ul, .sidebar-menu-nav li {
+        display: flex;
+        font-size: 16px;
+        margin: 5px 0px;
+    }
+    .sidebar-menu-nav li a {
+        display: none;
+    }
+    .text-right {
+        display: flex;
+        justify-content: center;
+    }
+    .left {
+        display: flex;
+        justify-content: space-between;
     }    
 }
 
