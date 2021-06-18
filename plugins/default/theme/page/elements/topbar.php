@@ -16,7 +16,9 @@
 						<img src="<?php echo ossn_loggedin_user()->iconURL()->smaller;?>" />
 					</div>   
 				</div>
+        
 				<input class="search__btn" id="search__btn" type="checkbox">
+        
 				<div class="col-md-5 col-xs-12 search_bar" id="search__box">
 					<?php if(ossn_isLoggedin()){ ?>
 					<div class="topbar-menu-left site-name">
@@ -32,10 +34,9 @@
 					</div>
 					<?php } ?>
 				</div>
-
+        
 				<div class="col-md-3 col-xs-12 right_menu">
 					<div class="topbar-menu-right">
-
 						<li class="ossn-topbar-dropdown-menu">
 							<div class="dropdown">
 							<?php
